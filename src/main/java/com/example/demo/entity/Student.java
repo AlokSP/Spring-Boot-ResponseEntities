@@ -21,15 +21,15 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int rollNo;
+    private int rollNo;
 
     @Column(name = "first_name")
-    String firstName;
+    private String firstName;
 
     @Column(name = "last_name")
-    String lastName;
+    private String lastName;
 
     @Column(name = "email", nullable = false, unique = true)
-    String email;
+    private String email;
 
 }
